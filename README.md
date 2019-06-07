@@ -14,6 +14,7 @@ macOS 10.14 (Mojave) or later
 - [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
 ## Major Dependencies
+- [SwiftSocket](https://github.com/swiftsocket/SwiftSocket)
 
 ## How to Build
 On terminal, which can use Cocoapods :

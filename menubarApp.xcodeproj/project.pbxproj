@@ -52,7 +52,7 @@
 		395AE9F622A9665F00A763E3 /* menubarAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = menubarAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		395AE9FA22A9665F00A763E3 /* menubarAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menubarAppUITests.swift; sourceTree = "<group>"; };
 		395AE9FC22A9665F00A763E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		395AEA0822A9671E00A763E3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		395AEA0822A9671E00A763E3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		55F448FD5896CF2F2F941E54 /* Pods-menubarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-menubarApp.debug.xcconfig"; path = "Target Support Files/Pods-menubarApp/Pods-menubarApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6654FD95DE18C178465050EB /* Pods-menubarAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-menubarAppTests.debug.xcconfig"; path = "Target Support Files/Pods-menubarAppTests/Pods-menubarAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8762078621A689C808890592 /* Pods-menubarAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-menubarAppUITests.release.xcconfig"; path = "Target Support Files/Pods-menubarAppUITests/Pods-menubarAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,7 +164,6 @@
 				D275A3AFA59BEF45E7B18BF6 /* Pods-menubarAppUITests.debug.xcconfig */,
 				8762078621A689C808890592 /* Pods-menubarAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +178,7 @@
 				395AE9D522A9665D00A763E3 /* Sources */,
 				395AE9D622A9665D00A763E3 /* Frameworks */,
 				395AE9D722A9665D00A763E3 /* Resources */,
+				6B8EF97C4B9EB636F98A4463 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +317,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B8EF97C4B9EB636F98A4463 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-menubarApp/Pods-menubarApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-menubarApp/Pods-menubarApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		74FECB7D4A55AA94B2C54E50 /* [CP] Check Pods Manifest.lock */ = {

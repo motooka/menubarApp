@@ -6,6 +6,7 @@ target 'menubarApp' do
   use_frameworks!
 
   # Pods for menubarApp
+  pod 'SwiftSocket'
 
   target 'menubarAppTests' do
     inherit! :search_paths
